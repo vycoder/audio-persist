@@ -19,4 +19,9 @@ public class AudioPersistPlugin extends Plugin {
         ret.put("value", implementation.echo(value));
         call.resolve(ret);
     }
+
+    @PluginMethod
+    public void initialize() {
+      call.resolve();
+    }
 }

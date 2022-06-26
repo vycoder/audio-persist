@@ -8,4 +8,9 @@ public class AudioPersist {
         Log.i("Echo", value);
         return value;
     }
+
+    public void initialize() {
+        Log.i("Initializing... no-op for Android.");
+        return;
+    }
 }

@@ -7,4 +7,8 @@ export class AudioPersistWeb extends WebPlugin implements AudioPersistPlugin {
     console.log('ECHO', options);
     return options;
   }
+  async initialize(): Promise<void> {
+    console.log('Initializing...');
+    return Promise.resolve();
+  }
 }
